@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Homework1_betananos</title>
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" href="css/cssmain.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	</head>
+
+	<body>
+	<!--Nav-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#home">HOME</a></li>
+		        <li><a href="#show">RAITING</a></li>
+		        <li><a href="#create">CREATE</a></li>
+		        <li><a href="#update">UPDATE</a></li>
+		        <li><a href="#delete">DELETE</a></li>
+		        <li><a href="#team">TEAM</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	<!--FinNav-->
+
+		<div class="jumbotron text-center" id="home">
+			<img src="img/note2.png" alt="logo">
+			<p>Homework 1</p>
+			<p>All you need is love</p>
+		</div>
+
+		<div class="container2 text-center">
+		  <h3>CRUD</h3>
+		  <p><em>Create - Read - Update - Delete</em></p>
+		  <p>Using Go and React</p>
+		</div>
+
+		<div id="show" class="container-fluid text-center">
+		  <h3>TOP RAITING</h3>
+
+			<table class="table">
+			    <thead>
+			      <tr>
+			        <th>ID</th>
+			        <th>ALBUM</th>
+			        <th>SONG</th>
+			        <th>RATING</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>01</td>
+			        <td>The Wall</td>
+			        <td>Goodbye Blue Sky</td>
+			        <td>10</td>
+			      </tr>
+			      <tr>
+			        <td>02</td>
+			        <td>The Black Album</td>
+			        <td>Enter Sandman</td>
+			        <td>8.5</td>
+			      </tr>
+			      <tr>
+			        <td>03</td>
+			        <td>Rust in Peace</td>
+			        <td>Hangar 18</td>
+			        <td>9</td>
+			      </tr>
+			    </tbody>
+			</table>
+		</div>
+
+		<div id="create" class="container-fluid text-center">
+		  
+		  <div class="row panel">
+		  <h3>CREATE</h3>
+		    <div class="col-sm-5">
+		      <img src="img/audio.png" alt="create">
+		    </div>
+		    <div class="col-sm-7">
+		      <div class="row">
+		        <div class="col-sm-8 form-group">
+		          <input class="form-control" id="album" name="album" placeholder="Album" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-8 form-group">
+		          <input class="form-control" id="song" name="song" placeholder="Song" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-8 form-group">
+		          <input class="form-control" id="rating" name="rating" placeholder="rating" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="col-sm-8 form-group">
+		          <button class="btn btn-default pull-left" type="submit">Create</button>
+		        </div>
+		      </div> 
+		    </div>
+		  </div>
+		</div>
+
+		<div id="update" class="container-fluid text-center">
+		  
+		  <div class="row panel">
+		  <h3>UPDATE</h3>
+		    <div class="col-sm-5">
+		      <img src="img/edit.png" alt="edit">
+		    </div>
+		    <div class="col-sm-7">
+		      <div class="row">
+		        <div class="col-sm-8 form-group">
+		          <input class="form-control" id="album" name="album" placeholder="Album" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-8 form-group">
+		          <input class="form-control" id="song" name="song" placeholder="Song" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-8 form-group">
+		          <input class="form-control" id="rating" name="rating" placeholder="rating" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="col-sm-8 form-group">
+		          <button class="btn btn-default pull-left" type="submit">Update</button>
+		        </div>
+		      </div> 
+		    </div>
+		  </div>
+		</div>
+
+
+		<div id="delete" class="container-fluid text-center">
+		  
+		  <div class="row panel">
+		  <h3>DELETE</h3>
+		    <div class="col-sm-5">
+		      <img src="img/delete.png" alt="delete">
+		    </div>
+		    <div class="col-sm-7">
+		      <div class="row">
+		        <div class="col-sm-8 form-group">
+		          <input class="form-control" id="album" name="album" placeholder="Album" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-8 form-group">
+		          <input class="form-control" id="song" name="song" placeholder="Song" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-8 form-group">
+		          <input class="form-control" id="rating" name="rating" placeholder="rating" type="text" required>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="col-sm-8 form-group">
+		          <button class="btn btn-default pull-left" type="submit">Delete</button>
+		        </div>
+		      </div> 
+		    </div>
+		  </div>
+		</div>
+
+		<div id="team" class="container-fluid text-center">
+			<h2>TEAM</h2>
+			<h3>BETA-NANOS</h3>
+			<div class="row">
+
+				<div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/jm.png" alt="Jesus Murillo">
+			        <p><strong>Chungo</strong></p>
+			        <p>Back-end</p>
+			      </div>
+			    </div>
+
+			    <div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/ri.png" alt="Ricardo Interiano">
+			        <p><strong>Raim</strong></p>
+			        <p>Back-end</p>
+			      </div>
+			    </div>
+
+			    <div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/gc.png" alt="Gabriela Castellanos">
+			        <p><strong>Gaby</strong></p>
+			        <p>Front-end</p>
+			      </div>
+			    </div>
+
+			    <div class="col-sm-3">
+			      <div class="thumbnail">
+			        <img src="img/li.png" alt="Luis Isaula">
+			        <p><strong>Isaula</strong></p>
+			        <p>Front-end</p>
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+		<footer class="text-center">
+		  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+		    <span class="glyphicon glyphicon-chevron-up"></span>
+		  </a><br><p> Made By Beta-nanos ® 2016</p> 
+		</footer>
+
+	</body>
+</html>
